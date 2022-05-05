@@ -1,0 +1,217 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <style>
+    .maps {
+      width: 100%;
+      height: 100%;
+      background: url("./images/Map_4.jpg") no-repeat center center;
+      background-size: cover;
+      position: relative;
+	  background-size: 100% 100%;
+    }
+
+    .maps div {
+      cursor: pointer;
+      width: 7em;
+      height: 7em;
+      position: absolute;
+    }
+
+    .maps div:nth-child(1) { /* C1 */
+      left: 2%;
+      bottom: 20%;
+    }
+
+    .maps div:nth-child(2) { /* C3 */
+      left: 10%;
+      bottom: 20%;
+    }
+
+    .maps div:nth-child(3) {/* 急救區 */
+      left: 18%;
+      bottom:20%;
+    }
+
+    .maps div:nth-child(4) {/* B4 */
+      left: 47%;
+      bottom: 28%;
+    }
+
+    .maps div:nth-child(5) { /* D1 */
+      left: 38%;
+      bottom: 28%;
+    }
+
+    .maps div:nth-child(6) { /* F2 */
+      left: 37%;
+      bottom: 43%;
+    }
+
+    .maps div:nth-child(8) { /* E2 */
+      left: 45%;
+      bottom:46%;
+    }
+
+    .maps div:nth-child(9) { /* B1 */
+      left: 55%;
+      bottom: 46%;
+    }
+
+    .maps div:nth-child(10) { /* B3 */
+      left: 65%;
+      bottom: 46%;
+    }
+
+    .maps div:nth-child(11) { /* B2 */
+      left: 72%;
+      bottom: 46%;
+    }
+
+    .maps div:nth-child(12) { /* E1 */
+      left: 79%;
+      bottom: 46%;
+    }
+
+    .maps div:nth-child(13) { /* 更衣室 */
+      left: 85%;
+      bottom: 45%;
+    }
+
+    .maps div:nth-child(14) { /* F1 */
+      left:63%;
+      bottom: 32%;
+    }
+
+    .maps div:nth-child(15) { /* C2 */
+      left: 70%;
+      bottom: 32%;
+    }
+
+    .maps div:nth-child(16) { /* A1 */
+      left: 18%;
+      bottom: 36%;
+    }
+  </style>
+  <script src="./js/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.link').click(function () {
+        location.href = '園内設施.html';;
+      });
+    });
+    $(document).ready(function () {
+      $('.link').click(function () {
+        location.href = '園内設施.html';;
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="header-box">
+    <div><img src="./images/WePark_Logo_offical.png" alt="" style="width: 13em"></div>
+    <nav>
+      <ul class="nav-ul" style="position: relative; z-index:999">
+        <li> <a href="#">A區</a>
+          <ul>
+            <li class="nav-effect-1"><a href="./A1.html">A1 玩戲劇</a></li>
+          </ul>
+        </li>
+        <li> <a href="#">B區</a>
+          <ul>
+            <li class="nav-effect-2"><a href="./B1.html">B1 玩水樂</a></li>
+            <li class="nav-effect-3"><a href="./B2.html">B2 玩沙堆</a></li>
+            <li class="nav-effect-4"><a href="./B3.html">B3 玩泥氹</a></li>
+            <li class="nav-effect-5"><a href="./B4.html">B4 玩得激</a></li>
+          </ul>
+        </li>
+        <li> <a href="#">C區</a>
+          <ul>
+            <li class="nav-effect-1"><a href="./C1.html">C1 玩創意</a></li>
+            <li class="nav-effect-2"><a href="./C2.html">C2 玩陶泥</a></li>
+            <li class="nav-effect-3"><a href="./C3.html">C3 隨意玩</a></li>
+          </ul>
+        </li>
+        <li> <a href="#">D區</a>
+          <ul>
+            <li class="nav-effect-1"><a href="./D1.html">玩管道</a></li>
+          </ul>
+        </li>
+        <li> <a href="#">E區</a>
+          <ul>
+            <li class="nav-effect-1"><a href="./E1.html">E1 玩木工</a></li>
+            <li class="nav-effect-2"><a href="./E2.html">E2 玩煮意</a></li>
+          </ul>
+        </li>
+        <li> <a href="#">F區</a>
+          <ul>
+            <li class="nav-effect-1"><a href="./F1.html">F1 野餐區</a></li>
+            <li class="nav-effect-2"><a href="./F2.html">F2 種植區</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="content">
+    <div class="nav-box">
+      <div class="nav1"><a href="./index.html"><img class="nav-icon" src="images/home.png" alt="">主頁</a></div>
+      <div class="nav1"><a href="./facility.html"><img class="nav-icon" src="images/FC.png" alt="">園内設施</a></div>
+      <div class="nav1"><a href="./event.html"><img class="nav-icon" src="images/activites.png" alt="">活動</a></div>
+    </div>
+    <div class="main">
+      <div class="maps">
+        <div class="nav1" onclick="location.href='C1.html';"><img src="images/icon/C1.png"
+            style="width: 7em;height: 7em;"></div>
+        <div class="nav1" onclick="location.href='C3.html';"><img src="images/icon/C3.png"
+            style="width: 7em;height: 7em;"></div>
+        <div class="nav1" onclick="location.href='A1.html';"><img src="images/icon/First aid3@3x.png"
+            style="width: 7em;height: 7em;"></div>
+        <div class="nav1" onclick="location.href='B4.html';"><img src="images/icon/B4@3x.png"
+            style="width: 7em;height: 7em;"></div>
+        <div class="nav1" onclick="location.href='D1.html';"><img src="images/icon/D1.png"
+            style="width: 7em;height: 7em;"></div>
+        <div class="nav1" onclick="location.href='F2.html';"><img src="images/icon/F2.png"
+            style="width: 7em;height: 7em;"></div>
+        <div></div>
+        <div class="nav1" onclick="location.href='E2.html';"><img src="images/icon/E2.png"
+            style="width: 7em;height: 7em;"></div>
+        <div class="nav1" onclick="location.href='B1.html';"><img src="images/icon/B1.png"
+            style="width: 7em;height: 7em;"></div>
+        <div class="nav1" onclick="location.href='B3.html';"> <img src="images/icon/B3.png"
+            style="width: 7em;height: 7em;"> </div>
+        <div class="nav1" onclick="location.href='B2.html';"><img src="images/icon/B2.png"
+            style="width: 7em;height: 7em;"></div>
+        <div class="nav1" onclick="location.href='E1.html';"><img src="images/icon/E1.png"
+            style="width: 7em;height: 7em;"></div>
+        <div class="nav1" onclick="location.href='E1.html';"><img src="images/icon/Locker.png"
+            style="width: 7em;height: 7em;"></div>
+        <div class="nav1" onclick="location.href='F1.html';"><img src="images/icon/F1.png"
+            style="width: 7em;height: 7em;"></div>
+        <div class="nav1" onclick="location.href='C2.html';"><img src="images/icon/C2.png"
+            style="width: 7em;height: 7em;"></div>
+        <div class="nav1" onclick="location.href='A1.html';"><img src="images/icon/A1.png"
+            style="width: 7em;height: 7em;"></div>
+      </div>
+    </div>
+  </div>
+  <div class="media"> <a href="#" class="float2" id="menu-share"> <i class="fa fa-share my-float"></i> </a>
+    <ul class="ul2">
+      <li><a href="https://www.vtc.edu.hk/html/tc/"> <i class="fa fa-facebook my-float"></i> </a></li>
+      <li><a href="https://www.vtc.edu.hk/admission/tc/programme/ce114301-higher-diploma-in-child-care-and-education/"> <i class="fa fa-google-plus my-float"></i> </a></li>
+    </ul>
+  </div>
+  <script
+    type="text/javascript">(function () { window['__CF$cv$params'] = { r: '6dce84445feb23e0', m: '3MBj2TaLxroj24qn.faO6bf_yxXv6sa04iu5OnH5EGk-1644760131-0-AY86DppTFVy8hEVX/lEqmlB5Fxw+MKcnOpf5LLHgk0rYY2E5VWtPHtCX07ca0aQzi1839DELn5sZCkQ0gWltWfJrcIiswqpVCm/+GDVUjVq7Rv5zdpiYw24MRBkP4rw/01JUMIRSwnISftQcDwQxXd7klfA9IvOIovZakV4zHDuXMbM32XuBi7QBP0jNR7gY3Q==', s: [0x2795d54082, 0x2e538aaac2], } })();</script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/auto.js"></script>
+
+</html>

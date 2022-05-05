@@ -1,0 +1,51 @@
+
+a
+{
+text-decoration:none;	
+}
+
+body
+{
+	background-image:url(../images/164546.jpg);
+	background-repeat:no-repeat;
+	background-size:200% 200%;
+}
+
+#all
+{
+	width:100%;margin:0 auto;height:1320px;
+}
+
+.left
+{
+	border:1px solid #91cde5;width:270px;height:1200px;background-color:#91cde5;margin:0 0 auto;
+}
+
+.logo
+{
+	width:150px;position:relative;left:50px;
+}
+
+.main
+{
+	width:75%;
+	border:1px solid white;
+	height:1200px;
+
+	background-color:white;
+	border-radius:25px;
+	margin:-1200px 300px auto;
+}
+
+.right
+{
+	background-color:white;
+	width:60px;
+	height:150px;
+	float:right;
+	margin-top:-880px;
+	border-radius:25px 0 0 25px;
+	
+	
+}
+

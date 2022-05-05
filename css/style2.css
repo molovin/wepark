@@ -1,0 +1,61 @@
+
+a
+{
+text-decoration:none;	
+}
+
+body
+{
+	background-image:url(../images/164546.jpg);
+	background-repeat:no-repeat;
+	background-size:200% 200%;
+}
+
+#all
+{
+	width:100%;margin:0 auto;;height:98%;
+}
+
+.left
+{
+	width:270px;height:800px;background-color:#91cde5;margin:0 0 auto;
+}
+
+.logo
+{
+	width:150px;position:relative;left:50px;
+}
+
+.main
+{
+	width:75%;
+	
+	height:1400px;
+
+	background-color:white;
+	border-radius:25px;
+	margin:-800px 300px auto;
+}
+
+.right
+{
+	background-color:white;
+	width:60px;
+	height:150px;
+	float:right;
+	margin-top:-1100px;
+	border-radius:25px 0 0 25px;
+	
+	
+}
+
+.main_index02
+{
+	width:760px;
+	height:500px;
+	background-color:#91cde5;
+	margin-left:630px;
+	margin-top:-500px;
+	border-radius:0 25px 25px 0;
+	
+}

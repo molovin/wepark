@@ -1,0 +1,126 @@
+<!DOCTYPE>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <style>
+    .card-box {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 2.5rem;
+    }
+
+    .card {
+      overflow: hidden;
+      border-radius: .625rem;
+      border: unset;
+      box-shadow: 0 0px 25px -5px rgb(0 0 0 / 10%), 0 10px 10px -5px rgb(0 0 0 / 4%);
+    }
+
+    .card-body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .card-title {
+      font-size: 1.75rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header-box">
+    <div><img src="./images/WePark_Logo_offical.png" alt="" style="width: 13em"></div>
+    <nav>
+     <ul class="nav-ul" style="position: relative; z-index:999">
+        <li> <a href="#">A區</a>
+          <ul>
+            <li class="nav-effect-1"><a href="./A1.html">A1 玩戲劇</a></li>
+          </ul>
+        </li>
+        <li> <a href="#">B區</a>
+          <ul>
+            <li class="nav-effect-2"><a href="./B1.html">B1 玩水樂</a></li>
+            <li class="nav-effect-3"><a href="./B2.html">B2 玩沙堆</a></li>
+            <li class="nav-effect-4"><a href="./B3.html">B3 玩泥氹</a></li>
+            <li class="nav-effect-5"><a href="./B4.html">B4 玩得激</a></li>
+          </ul>
+        </li>
+        <li> <a href="#">C區</a>
+          <ul>
+            <li class="nav-effect-1"><a href="./C1.html">C1 玩創意</a></li>
+            <li class="nav-effect-2"><a href="./C2.html">C2 玩陶泥</a></li>
+            <li class="nav-effect-3"><a href="./C3.html">C3 隨意玩</a></li>
+          </ul>
+        </li>
+        <li> <a href="#">D區</a>
+          <ul>
+            <li class="nav-effect-1"><a href="./D1.html">玩管道</a></li>
+          </ul>
+        </li>
+        <li> <a href="#">E區</a>
+          <ul>
+            <li class="nav-effect-1"><a href="./E1.html">E1 玩木工</a></li>
+            <li class="nav-effect-2"><a href="./E2.html">E2 玩煮意</a></li>
+          </ul>
+        </li>
+        <li> <a href="#">F區</a>
+          <ul>
+            <li class="nav-effect-1"><a href="./F1.html">F1 觀樹樂</a></li>
+            <li class="nav-effect-2"><a href="./F2.html">F2 玩田樂</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <div class="content">
+
+    <div class="nav-box">
+      <div class="nav1"><a href="./index.html"><img class="nav-icon" src="images/home.png" alt="">主頁</a></div>
+      <div class="nav1"><a href="./facility.html"><img class="nav-icon" src="images/FC.png" alt="">園内設施</a></div>
+      <div class="nav1"><a href="./event.html"><img class="nav-icon" src="images/activites.png" alt="">活動</a></div>
+    </div>
+
+    <div class="main" style="padding: 4em;">
+
+      <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="card-body">
+          <div>
+            <h5 class="card-title"><b>歡樂聖誕——WePark</b></h5>
+            <p class="card-text">24-12-2021至25-12-2021</p>
+          </div>
+          <div>
+            <a href="#" class="btn btn-primary" onclick="setDetail('shui')"
+              style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">查看详情</a>
+          </div>
+        </div>
+        <img src="./images/5.jpg" class="card-img-bottom" alt="..."
+          style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+      </div>
+
+    </div>
+
+    <div class="media">
+      <a href="#" class="float2" id="menu-share">
+        <i class="fa fa-share my-float"></i>
+      </a>
+      <ul class="ul2">
+        <li><a href="https://www.vtc.edu.hk/html/tc/"> <i class="fa fa-facebook my-float"></i> </a></li>
+      <li><a href="https://www.vtc.edu.hk/admission/tc/programme/ce114301-higher-diploma-in-child-care-and-education/"> <i class="fa fa-google-plus my-float"></i> </a></li>
+      </ul>
+
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/auto.js"></script>
+
+</html>

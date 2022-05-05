@@ -1,0 +1,425 @@
+<!DOCTYPE>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<style>
+		@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+		.card-box {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			margin-top: 2.5rem;
+		}
+
+		.card {
+			overflow: hidden;
+			border-radius: .625rem;
+			border: unset;
+			box-shadow: 0 0px 25px -5px rgb(0 0 0 / 10%), 0 10px 10px -5px rgb(0 0 0 / 4%);
+		}
+
+		.more-box {
+			background: rgb(0 0 0 / 5%);
+			margin: 0 auto;
+			width: 60rem;
+			margin-bottom: 2.5rem;
+		}
+
+		.detail {
+			width: 100%;
+			margin: 0 auto;
+			/* display: flex; */
+			justify-content: center;
+			display: none;
+			/* tw-bg-white tw-w-10/12 tw-h-96 tw-flex tw-rounded-xl tw-shadow-xl tw-overflow-hidden tw-mt-10 tw-relative */
+
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header-box">
+		<div class="left-nav"><img src="./images/WePark_Logo_offical.png" style="width:100%"></div>
+		<div class="right-nav">
+			<ul class="nav-ul" style="position: relative; z-index:999">
+				<li> <a href="#">A區</a>
+					<ul>
+						<li class="nav-effect-1"><a href="./A1.html">A1 玩戲劇</a></li>
+					</ul>
+				</li>
+				<li> <a href="#">B區</a>
+					<ul>
+						<li class="nav-effect-2"><a href="./B1.html">B1 玩水樂</a></li>
+						<li class="nav-effect-3"><a href="./B2.html">B2 玩沙堆</a></li>
+						<li class="nav-effect-4"><a href="./B3.html">B3 玩泥氹</a></li>
+						<li class="nav-effect-5"><a href="./B4.html">B4 玩得激</a></li>
+					</ul>
+				</li>
+				<li> <a href="#">C區</a>
+					<ul>
+						<li class="nav-effect-1"><a href="./C1.html">C1 玩創意</a></li>
+						<li class="nav-effect-2"><a href="./C2.html">C2 玩陶泥</a></li>
+						<li class="nav-effect-3"><a href="./C3.html">C3 隨意玩</a></li>
+					</ul>
+				</li>
+				<li> <a href="#">D區</a>
+					<ul>
+						<li class="nav-effect-1"><a href="./D1.html">玩管道</a></li>
+					</ul>
+				</li>
+				<li> <a href="#">E區</a>
+					<ul>
+						<li class="nav-effect-1"><a href="./E1.html">E1 玩木工</a></li>
+						<li class="nav-effect-2"><a href="./E2.html">E2 玩煮意</a></li>
+					</ul>
+				</li>
+				<li> <a href="#">F區</a>
+					<ul>
+						<li class="nav-effect-1"><a href="./F1.html">F1 觀樹樂</a></li>
+						<li class="nav-effect-2"><a href="./F2.html">F2 玩田樂</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="content">
+		<div class="nav-box">
+      <div class="nav1"><a href="./index.html"><img class="nav-icon" src="images/home.png" alt="">主頁</a></div>
+      <div class="nav1"><a href="./facility.html"><img class="nav-icon" src="images/FC.png" alt="">園内設施</a></div>
+      <div class="nav1"><a href="./event.html"><img class="nav-icon" src="images/activites.png" alt="">活動</a></div>
+    </div>
+		<div class="main">
+			<div class="card-box">
+				<div class="card" style="width: 25rem;">
+					<img src="./images/A1.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title"><b>A1 玩戲劇</b></h5>
+						<p class="card-text">尋找屬於自己的舞臺</p>
+						<a href="#" class="btn btn-primary" onclick="setDetail('a1')"
+							style="box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">查看詳情</a>
+					</div>
+				</div>
+				<div class="card" style="width: 25rem;">
+					<img src="./images/B1.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title"><b>B1 玩水樂</b></h5>
+						<p class="card-text">探索水的流動及變化</p>
+						<a href="#" class="btn btn-primary" onclick="setDetail('b1')"
+							style="box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">查看詳情</a>
+					</div>
+				</div>
+				<div class="card" style="width: 25rem;">
+					<img src="./images/B2.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title"><b>B2 玩沙堆</b></h5>
+						<p class="card-text">探索沙的特性</p>
+						<a href="#" class="btn btn-primary" onclick="setDetail('b2')"
+							style="box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">查看詳情</a>
+					</div>
+				</div>
+
+				<div class="card" style="width: 25rem; margin-top: 3em;">
+					<img src="./images/B3.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title"><b>B3 玩泥氹</b></h5>
+						<p class="card-text">體驗泥漿玩樂趣</p>
+						<a href="#" class="btn btn-primary" onclick="setDetail('b3')"
+							style="box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">查看詳情</a>
+					</div>
+				</div>
+				<div class="card" style="width: 25rem; margin-top: 3em;">
+					<img src="./images/B4.JPG" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title"><b>B4 玩得激</b></h5>
+						<p class="card-text">動動腦 動動手</p>
+						<a href="#" class="btn btn-primary" onclick="setDetail('b4')"
+							style="box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">查看詳情</a>
+					</div>
+				</div>
+				<div class="card" style="width: 25rem; margin-top: 3em;">
+					<img src="./images/C1.JPG" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title"><b>C1 玩創意</b></h5>
+						<p class="card-text">讓小朋友自由創造</p>
+						<a href="#" class="btn btn-primary" onclick="setDetail('c1')"
+							style="box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">查看詳情</a>
+					</div>
+				</div>
+				<div class="card" style="width: 25rem; margin-top: 3em;">
+					<img src="images/C2.jpeg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title"><b>C2 玩陶泥</b></h5>
+						<p class="card-text">創作獨一無二的陶藝品</p>
+						<a href="#" class="btn btn-primary" onclick="setDetail('c2')"
+							style="box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">查看詳情</a>
+					</div>
+				</div>
+				<div class="card" style="width: 25rem; margin-top: 3em;">
+					<img src="./images/C3.JPG" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title"><b>C3 隨意玩</b></h5>
+						<p class="card-text">發揮創意小宇宙</p>
+						<a href="#" class="btn btn-primary" onclick="setDetail('c3')"
+							style="box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">查看詳情</a>
+					</div>
+				</div>
+				<div class="card" style="width: 25rem; margin-top: 3em;">
+					<img src="./images/D1.JPG" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title"><b>D1 玩管道</b></h5>
+						<p class="card-text">在Stem Wall上自由探索</p>
+						<a href="#" class="btn btn-primary" onclick="setDetail('d1')"
+							style="box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">查看詳情</a>
+					</div>
+				</div>
+				<div class="card" style="width: 25rem; margin-top: 3em;">
+					<img src="./images/E1.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title"><b>E1 玩木工</b></h5>
+						<p class="card-text">創作獨一無二的木製品</p>
+						<a href="#" class="btn btn-primary" onclick="setDetail('e1')"
+							style="box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">查看詳情</a>
+					</div>
+				</div>
+				<div class="card" style="width: 25rem; margin-top: 3em;">
+					<img src="./images/E2.JPG" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title"><b>E2 玩煮意</b></h5>
+						<p class="card-text">用味覺感受大自然</p>
+						<a href="#" class="btn btn-primary" onclick="setDetail('e2')"
+							style="box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">查看詳情</a>
+					</div>
+				</div>
+				<div class="card" style="width: 25rem; margin-top: 3em;">
+					<img src="./images/F1.JPG" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title"><b>F1 觀樹樂</b></h5>
+						<p class="card-text">感受清風享受自然的氣息</p>
+						<a href="#" class="btn btn-primary" onclick="setDetail('f1')"
+							style="box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">查看詳情</a>
+					</div>
+				</div>
+				<div class="card" style="width: 25rem; margin-top: 3em;">
+					<img src="./images/F1.JPG" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title"><b>F2 玩田樂</b></h5>
+						<p class="card-text">親手體驗種植過程</p>
+						<a href="#" class="btn btn-primary" onclick="setDetail('f2')"
+							style="box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">查看詳情</a>
+					</div>
+				</div>
+			</div>
+
+			<br>
+			<div class="detail">
+
+			</div>
+
+			<br>
+			<div class="text-center">
+				<h3>探索更多</h3>
+			</div>
+			<br>
+			<div class="more-box">
+				<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+							class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+							aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+							aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="./images/工作區域 1.png" class="d-block w-100" alt="..." />
+							<div class="carousel-caption d-none d-md-block">
+								<h5 class="tw-text-6xl tw-mb-4">玩樂區</h5>
+								<p class="tw-text-2xl tw-mb-4">讓兒童在尋找屬於自己的舞臺共創表演空間</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="./images/5.jpg" class="d-block w-100" alt="..." box-shadow: 0 4px 8px 0 rgba(0, 0,
+								0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); />
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Second slide label</h5>
+								<p>Some representative placeholder content for the second slide.</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="./images/C.png" class="d-block w-100" alt="..." />
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Third slide label</h5>
+								<p>Some representative placeholder content for the third slide.</p>
+							</div>
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+						data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+						data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="media">
+		<a href="#" class="float2" id="menu-share">
+			<i class="fa fa-share my-float"></i>
+		</a>
+		<ul class="ul2">
+			<li><a href="https://www.vtc.edu.hk/html/tc/"> <i class="fa fa-facebook my-float"></i> </a></li>
+      <li><a href="https://www.vtc.edu.hk/admission/tc/programme/ce114301-higher-diploma-in-child-care-and-education/"> <i class="fa fa-google-plus my-float"></i> </a></li>
+		</ul>
+	</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/auto.js"></script>
+<script>
+	function offDetail() {
+		document.getElementsByClassName('card-box')[0].style.display = 'flex'
+		document.getElementsByClassName('detail')[0].style.display = 'none'
+	}
+	function setDetail(type) {
+		console.log(type, document.getElementsByClassName('card-box'));
+		document.getElementsByClassName('card-box')[0].style.display = 'none'
+		document.getElementsByClassName('detail')[0].style.display = 'flex'
+		var detailData =
+		{
+			title: 'B3 玩沙區',
+			images: './images/B1.jpg',
+			detail: '管道 <br> 大自然恩物（如：樹枝、石頭、樹葉...）'
+		}
+		switch (type) {
+			case 'b1':
+				detailData = {
+					title: 'B1 玩水樂',
+					images: './images/B1.jpg',
+					detail: '<b>透過不同工具及玩物，探索水的流動及變化</b>  <br><li>不同器皿（如：水壺、量杯。。。）</li></b> <br><li>玩水工具（如：匙羹、針筒、漏斗。。。）</li></b> <br><li>各類浮沉物品（（如：小船、海綿、小氣球、石頭。。。）</li></b> <br><li>水彩、食用顔料、泡泡</li></b>'
+				}
+				break;
+			case 'b2':
+				detailData = {
+					title: 'B2 玩沙堆',
+					images: './images/B2.jpg',
+					detail: '<b>透過動手動脚玩沙，發掘不同玩沙方法及沙的特性</b>  <br><li不同器皿（如：水樽、水盆）</li></b> <br><li>玩沙工具（如：沙剷、挖沙爪、漏斗。。。）</li></b> <br><li>模具、貝殼、石頭、大積木、管道</li></b> <br><li>剷沙車</li></b> <br><li>燈箱</li></b>'
+				}
+				break;
+			case 'b3':
+				detailData = {
+					title: 'B3 玩泥氹',
+					images: './images/B3.jpg',
+					detail: '<b>藉不同探索物，體驗泥漿樂趣</b>  <br><li>大自然恩物（如：樹枝、石頭、樹葉。。。）</li></b> <br><li>不同器皿（如：水樽、水桶。。。）</li></b> <br><li>主題玩具（如：泥剷、吸泥管。。。）</li></b> <br><li>不同的球</li></b> '
+				}
+				break;
+			case 'b4':
+				detailData = {
+					title: 'B4 玩得激', 
+					images: './images/B4.JPG',
+					detail: '<b>動腦動手，運用不同物料設計刺激有趣的游戲</b>  <br><li>各式紙箱</li></b> <br><li>車輪</li></b> <br><li>巨型木箱</li></b> <br><li>平衡木板。。。。。。</li></b> '
+				}
+				break;
+			case 'c1':
+				detailData = {
+					title: 'C1 玩創意', 
+					images: './images/C1.JPG',
+					detail: '<b>提供不同物料及工具，讓兒童自由創作</b>  <br><li>各式畫具（如：畫筆、油漆滾筒刷、油漆掃）</li></b> <br><li>小型地拖、拖把</li></b> <br><li>水筆、廣告彩</li></b> <br><li>梳、水</li></b> '
+				}
+				break;
+			case 'c2':
+				detailData = {
+					title: 'C2 玩陶泥', 
+					images: './images/C2.jpeg',
+					detail: '<b>讓幼兒發揮創意創作 獨一無二的陶藝品</b>  <br><li>各式陶藝工具（如：刀）</li></b> <br><li>陶土機</li></b> <br><li>大自然小寶貝（幼兒可在園區内自由搜尋小寶貝）</li></b>  '
+				}
+				break;
+			case 'c3':
+				detailData = {
+					title: 'C3 隨意玩', 
+					images: './images/C3.jpg',
+					detail: '<b>提供大量不同種類積木讓幼兒自由發揮，感受建築的藝術，亦提供多類型物資給幼兒探索玩法</b>  <br><li>彩色、實木積木</li></b> <br><li>軟墊積木</li></b> <br><li>透光積木</li></b> <br><li>探索鏡盆</li></b> '
+				}
+				break;
+			case 'd1':
+				detailData = {
+					title: 'D1 玩管道', 
+					images: './images/D1.jpg',
+					detail: '<b>提供不同物料及工具，讓幼兒在Stem Wall上自由探索</b>  <br><li>搭建和組裝水管及齒輪</li></b> <br><li>利用點、綫創作不同圖案</li></b> <br><li>利用黑板或白板進行創作</li></b>  '
+				}
+				break;
+			case 'e1':
+				detailData = {
+					title: 'E1 玩木工', 
+					images: './images/E1.jpg',
+					detail: '<b>讓幼兒發揮創意創作獨一無二的木製品</b>  <br><li>各式木工工具（如：小鋸子）</li></b> <br><li>黏貼工具（如：膠水）</li></b> <br><li>飛機木</li></b>  '
+				}
+				break;
+			case 'e2':
+				detailData = {
+					title: 'E2 玩煮意', 
+					images: './images/E2.jpg',
+					detail: '<b>把親手摘下的農作物即時烹調及進食，用味覺感受大自然</b>  <br><li>提供多功能煮食車及煮食用具</li></b> <br><li>於野餐區享受食物</li></b>  '
+				}
+				break;
+			case 'f1':
+				detailData = {
+					title: 'F1 觀樹樂', 
+					images: './images/F1.JPG',
+					detail: '<b>在樹屋中靜觀身旁的樹木，享受剛收割的農作物，感受清風和陽光帶來的自然氣息</b>  '
+				}
+				break;
+			case 'f2':
+				detailData = {
+					title: 'F2 玩田樂', 
+					images: './images/F1.JPG',
+					detail: '<b>親手下種、施肥及收割，體驗種植過程</b>  <br><li>茄子</li></b> <br><li>番茄</li></b> <br><li>木瓜</li></b> <br><li>香草</li></b> '
+				}
+				break;
+			case 'a1':
+				detailData = {
+					title: 'A1 玩戲劇',
+					images: './images/A1.jpg',
+					detail: '<b>讓幼兒在尋找屬於自己的舞台，共創表演空間</b>  <br><li>繪本故事引發</li></b> <br><li>四格故事創作</li></b> <br><li>配合各類服飾增加戲劇感</li></b> <br><li>配合創意玩物，豐富戲劇元素</li></b> '
+				}
+				break;
+
+			default:
+				break;
+		}
+
+		var detailHtml = `
+		<div class="card mb-3 position-relative" style="width: 80rem;">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img src="${detailData.images}" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-6" style="background-color:#87ceeb8f;">
+                <div class="card-body">
+                  <h5 class="card-title">${detailData.title}</h5>
+                  <p class="card-text">${detailData.detail}</p>
+                </div>
+              </div>
+            </div>
+            <div class="position-absolute" style="top:0em;right:0em; margin-top:24.3em;"><button type="button" class="btn btn-primary"
+                onclick="offDetail()">返回</button></div>
+        </div>`
+		document.getElementsByClassName('detail')[0].innerHTML = detailHtml
+
+	}
+</script>
+
+</html>

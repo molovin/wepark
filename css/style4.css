@@ -1,0 +1,124 @@
+
+a
+{
+text-decoration:none;	
+}
+
+body
+{
+	background-image:url(../images/164546.jpg);
+	background-repeat:no-repeat;
+	background-size:200% 200%;
+}
+
+#all
+{
+	width:100%;margin:0 auto;height:2220px;
+}
+
+.left
+{
+	border:1px solid #91cde5;width:270px;height:1200px;background-color:#91cde5;margin:0 0 auto;z-index:9999;position:relative;
+}
+
+.logo
+{
+	width:150px;position:relative;left:50px;
+}
+
+.main
+{
+	width:75%;
+	
+	height:2100px;
+	
+	background-color:white;
+	border-radius:25px;
+	margin:-1212px 300px auto;
+}
+
+.right
+{
+	background-color:white;
+	width:60px;
+	height:150px;
+	float:right;
+	margin-top:-1780px;
+	border-radius:25px 0 0 25px;
+	
+	
+}
+
+.title
+{
+	position: relative;
+	height: 150px;
+	width:1300px;
+	background-color: white;
+	margin-top: -720px;
+	border-radius: 25px 25px 0 0;	
+	
+}
+
+
+
+h3 {
+    font-size: 30px;
+    color: white;
+    text-align: left;
+    font-weight: normal;
+	position:relative;
+	width:400px;
+	height:100px;
+	left:-10px;
+	top:100px;	
+
+}
+
+.container {
+margin-top: 20px;
+  position: relative;
+  width: 50%;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 1300px;
+  height: 720px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+	z-index:2;
+  position: absolute;
+  top: 80px;
+  left: 1200px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:cornflowerblue;
+  color: white;
+  font-size: 20px;
+  padding: 20px 45px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.container .btn:hover {
+  background-color: dodgerblue ;
+}
+
+.center {
+  margin-left: 50px;
+	margin-top: 10px;
+  width: 60%;
+  padding: 10px;
+}
+
+.center2 {
+  margin-left: 50px;
+	margin-top: 570px;
+  width: 60%;
+  padding: 10px;
+}

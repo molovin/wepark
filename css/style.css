@@ -1,0 +1,375 @@
+a {
+  text-decoration: none;
+}
+html{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+body {
+  background-image: url('../images/bg2.jpg');
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  font-family: ‘cwTeXYen’, sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#all {
+  width: 100%;
+  margin: 0 auto;
+  height: 98%;
+}
+
+.left {
+  width: 270px;
+  height: 800px;
+  background-color: #91cde5;
+  margin: 0 0 auto;
+}
+
+.logo {
+  width: 150px;
+  position: relative;
+  left: 50px;
+}
+
+.right {
+  background-color: white;
+  width: 60px;
+  height: 150px;
+  float: right;
+  margin-top: -500px;
+  border-radius: 25px 0 0 25px;
+}
+
+.main_index02 {
+  width: 760px;
+  height: 500px;
+  background-color: #91cde5;
+  margin-left: 630px;
+  margin-top: -500px;
+  border-radius: 0 25px 25px 0;
+}
+
+/* ************************************************************************ */
+
+.main {
+  overflow-y: scroll;
+	overflow-x: scroll;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* for Chrome */
+.main::-webkit-scrollbar {
+  display: none;
+}
+
+.content {
+  height: calc(100vh - 6.75rem - 30px);
+  width: 100%;
+  display: flex;
+  padding: 0 30px;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.nav-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.main {
+  flex: 1;
+  min-width: 400px;
+  background-color: #f8f9fa91;
+  border-radius: 2em;
+  font-family: ‘cwTeXYen’, sans-serif;
+}
+
+.nav-box {
+  width: 20%;
+  min-width: 200px;
+  margin-right: 2rem;
+  background-color: #f8f9fa94;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 1rem;
+  padding-left: 1.875rem;
+  border-radius: 2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav-box > div {
+  margin-top: 1.875rem;
+}
+
+.nav-box > div > a {
+  color: #8b8b8b;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.nav-box > div > a > img {
+  margin-right: 0.625rem;
+}
+
+.header-box {
+  width: 100%;
+  height: 6.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.header-box img {
+    width: 5rem;
+  height: 4rem;
+  margin-left: 40%;
+}
+
+.left-nav {
+  width: 13rem;
+}
+.right-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.input-group {
+  width: 18.75rem;
+  height: 2.5rem;
+}
+
+.nav-box2 {
+  width: 40rem;
+  height: 20rem;
+  margin-right: 2rem;
+  background-color: #91cde5;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 1rem;
+  padding-left: 1.875rem;
+}
+
+.nav1:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transition: transform 0.2s;
+}
+
+/****************************************************/
+.nav_s {
+  width: 100%;
+  /*  background-color:#455552;*/
+  position: relative;
+  width: 650px;
+  margin-top: -20px;
+}
+.nav-ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.nav-ul > li {
+  border-radius: 10px;
+  display: inline-block;
+  position: relative;
+  background-color: #17a78a;
+  margin-right: 0.5em;
+}
+.nav-ul a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 0.5em 2em;
+}
+.nav-ul a:hover {
+  background-color: #1abc9c;
+}
+.nav-ul a:hover + ul li {
+  opacity: 1;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+.nav-ul a + ul {
+  list-style: none;
+  position: absolute;
+  transition: opacity 0.5s;
+  -webkit-perspective: 800;
+  -webkit-transform-style: preserve-3d;
+}
+.nav-ul a + ul:hover li {
+  opacity: 1;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+.nav-ul a + ul li {
+  position: relative;
+  left: -40px;
+  opacity: 0;
+  width: 220px;
+  transition: transform 1.5s, opacity 0.8s;
+}
+.nav-ul a + ul a {
+  display: inline-block;
+  width: 75%;
+  background-color: rgba(26, 188, 156, 0.75);
+}
+.nav-effect-1 {
+  transform: rotateY(90deg) translateX(10px);
+}
+.nav-effect-2 {
+  transform: rotateY(120deg) translateX(20px);
+}
+.nav-effect-3 {
+  transform: rotateY(150deg) translateX(30px);
+}
+.nav-effect-4 {
+  transform: rotateY(180deg) translateX(40px);
+}
+.nav-effect-5 {
+  transform: rotateY(210deg) translateX(50px);
+}
+.nav-ul a + ul a:hover {
+  background-color: rgba(69, 85, 82, 0.75);
+}
+
+/******************************************************/
+
+.label-container {
+  position: fixed;
+  bottom: 48px;
+  right: 105px;
+  display: table;
+  visibility: hidden;
+}
+
+.label-text {
+  color: #fff;
+  background: rgba(51, 51, 51, 0.5);
+  display: table-cell;
+  vertical-align: middle;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.label-arrow {
+  display: table-cell;
+  vertical-align: middle;
+  color: #333;
+  opacity: 0.5;
+}
+
+.float2 {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 70px;
+  right:30px;
+  background-color: #5fa4dd;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1000;
+  animation: bot-to-top 2s ease-out;
+}
+
+.ul2 {
+  position: fixed;
+  right: 30px;
+  padding-bottom: 20px;
+  bottom: 100px;
+  z-index: 100;
+}
+
+.ul2 li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.ul2 li a {
+  /*展開項*/
+  background-color: #5fa4dd;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+.ul2:hover {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.my-float {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+a#menu-share + ul {
+  visibility: hidden;
+}
+
+a#menu-share:hover + ul {
+  visibility: visible;
+  animation: scale-in 0.5s;
+}
+
+a#menu-share i {
+  animation: rotate-in 0.5s;
+}
+
+a#menu-share:hover > i {
+  animation: rotate-out 0.5s;
+}
+
+@keyframes bot-to-top {
+  0% {
+    bottom: -40px;
+  }
+  50% {
+    bottom: 40px;
+  }
+}
+
+@keyframes scale-in {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate-in {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-out {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+/**********************************************************/
